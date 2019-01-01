@@ -21,3 +21,11 @@ $ yarn start
 ```sh
 $ yarn test
 ```
+
+## Planning
+
+## Improvement
+
+- Add more functional tests on events
+- More Improved styling, use Less, or CSS Modules whe the projects gets bigger.
+- Add more validation and error handling.
