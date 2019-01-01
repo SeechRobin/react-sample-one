@@ -7,6 +7,7 @@ const loan = props => (
     <div className="loan-card" onClick={() => props.invest(props.details.id)}>
       <h2>{props.details.title}</h2>
       <p>Tranche: {props.details.tranche}</p>
+      <p>Annualised Return: {props.details.annualised_return}</p>
       <p>Available: £{props.details.available.toFixed(2)}</p>
       {props.details.invested ? <p className="badge">Invested</p> : null}
     </div>

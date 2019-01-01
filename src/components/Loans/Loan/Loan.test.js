@@ -40,7 +40,11 @@ describe("<Loan />", () => {
     expect(wrapper.contains(<p>Available: £31405.00</p>)).equal(true);
   });
 
-  it("Should add invested badge ", () => {
+  it("Should render loan Available", () => {
+    expect(wrapper.contains(<p>Annualised Return: 7.1</p>)).equal(true);
+  });
+
+  it("Should add invested badge", () => {
     expect(wrapper.contains(<p className="badge">Invested</p>)).equal(true);
   });
 });
