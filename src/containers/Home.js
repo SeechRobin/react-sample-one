@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Loans from "../components/Loans/Loans";
+import AvailableLoansTotal from "../components/Loans/AvailableLoansTotal/AvailableLoansTotal";
 
 import loans from "../data/current-loans.json";
 
@@ -50,6 +51,7 @@ class Home extends Component {
       investing: true
     });
   };
+
   render() {
     return (
       <div className="container">
@@ -58,6 +60,7 @@ class Home extends Component {
           loans={this.state.loans}
           invest={this.clickOnLoanHandler}
         />
+        <AvailableLoansTotal loans={this.state.loans} />
       </div>
     );
   }

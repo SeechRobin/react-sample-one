@@ -1,5 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
+import { expect } from "chai";
 
 import Loan from "./Loan";
 
@@ -28,18 +29,18 @@ describe("<Loan />", () => {
       wrapper.contains(
         <h2>Consectetur ipsam qui magnam minus dolore ut fugit.</h2>
       )
-    ).toEqual(true);
+    ).equal(true);
   });
 
   it("Should render loan Tranche", () => {
-    expect(wrapper.contains(<p>Tranche: B</p>)).toEqual(true);
+    expect(wrapper.contains(<p>Tranche: B</p>)).equal(true);
   });
 
   it("Should render loan Available", () => {
-    expect(wrapper.contains(<p>Available: £31405.00</p>)).toEqual(true);
+    expect(wrapper.contains(<p>Available: £31405.00</p>)).equal(true);
   });
 
   it("Should add invested badge ", () => {
-    expect(wrapper.contains(<p className="badge">Invested</p>)).toEqual(true);
+    expect(wrapper.contains(<p className="badge">Invested</p>)).equal(true);
   });
 });
