@@ -15,9 +15,9 @@ class AvailableLoansTotal extends Component {
     const { loans } = this.props;
     const availableLoansTotal = this.calculateAvailableLoansTotal(loans);
     return (
-      <div>
+      <div className="available-loans-total">
         <h2>
-          Total Amount of possible investments: £
+          Total Amount Of Possible Investments: £
           {availableLoansTotal.toFixed(2)}
         </h2>
       </div>

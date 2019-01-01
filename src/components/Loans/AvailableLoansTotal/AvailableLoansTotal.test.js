@@ -39,7 +39,7 @@ describe("<AvailableLoansTotal />", () => {
 
   it("Should return the crrect total", () => {
     expect(
-      wrapper.contains(<h2>Total Amount of possible investments: £43364.00</h2>)
+      wrapper.contains(<h2>Total Amount Of Possible Investments: £43364.00</h2>)
     ).equal(true);
   });
 });

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
+import Modal from "../components/UI/Modal/Modal";
 import Loans from "../components/Loans/Loans";
+import LoanInvestForm from "../components/Loans/LoanInvestForm/LoanInvestForm";
 import AvailableLoansTotal from "../components/Loans/AvailableLoansTotal/AvailableLoansTotal";
 
 import loans from "../data/current-loans.json";
@@ -52,9 +54,52 @@ class Home extends Component {
     });
   };
 
+  investCancelHandler = () => {
+    this.setState({ investing: false });
+  };
+
+  investButtonHandler = event => {
+    event.preventDefault();
+    const submitted = this.updateLoansState();
+    if (submitted) {
+      this.setState({ investing: false, investmentAmount: "" });
+    }
+  };
+
+  investChangeHandler = event => {
+    this.setState({ investmentAmount: event.target.value });
+  };
+
+  updateLoansState() {
+    let loans = this.state.loans;
+    const { investmentAmount, currentSelectedLoanIndex } = this.state;
+    const available = loans[currentSelectedLoanIndex].available;
+
+    if (available >= investmentAmount) {
+      loans[currentSelectedLoanIndex].available = available - investmentAmount;
+      loans[currentSelectedLoanIndex].invested = true;
+      this.setState({ loans: loans });
+    }
+    return true;
+  }
+
   render() {
+    const loanInvestForm = (
+      <LoanInvestForm
+        submit={this.investButtonHandler}
+        value={this.state.investmentAmount}
+        change={this.investChangeHandler}
+        loan={this.state.loans[this.state.currentSelectedLoanIndex]}
+      />
+    );
     return (
       <div className="container">
+        <Modal
+          show={this.state.investing}
+          modalClosed={this.investCancelHandler}
+        >
+          {this.state.investing ? loanInvestForm : null}
+        </Modal>
         <Loans
           title="Current Loans"
           loans={this.state.loans}

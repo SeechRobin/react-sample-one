@@ -6,6 +6,8 @@ import { expect } from "chai";
 import Home from "./Home";
 import Loans from "../components/Loans/Loans";
 import AvailableLoansTotal from "../components/Loans/AvailableLoansTotal/AvailableLoansTotal";
+import LoanInvestForm from "../components/Loans/LoanInvestForm/LoanInvestForm";
+import Modal from "../components/UI/Modal/Modal";
 
 describe("<Home />", () => {
   let wrapper;
@@ -26,5 +28,13 @@ describe("<Home />", () => {
 
   it("should render AvailableLoansTotal", () => {
     expect(wrapper.find(AvailableLoansTotal).exists()).equal(true);
+  });
+  it("should not render LoanInvestForm", () => {
+    expect(wrapper.find(LoanInvestForm).exists()).equal(false);
+  });
+
+  it("should render LoanInvestForm", function() {
+    wrapper.setState({ investing: true });
+    expect(wrapper.find(Modal).exists()).equal(true);
   });
 });
