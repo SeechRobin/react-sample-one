@@ -24,7 +24,24 @@ $ yarn test
 
 ## Planning
 
-It took approximateley 3h to complete the project
+It took approximateley 3hrs to complete the project. Below is the breakdown of howthe work was completed.
+
+#### 30 minutes
+
+- Read through the problem
+- Design basic layout see picture below
+- Designed potential tests
+
+#### 2h 30minutes
+
+- TDD
+- Coding
+- Refactoring
+
+#### Last 30minutes
+
+- Refactoring
+- Write up
 
 ![Some notes](notes/Lendinvest.jpg)
 
