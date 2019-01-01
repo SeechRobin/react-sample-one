@@ -4,3 +4,39 @@ body {
   font-family: "UntitledSans", Helvetica Neue, Helvetica, Arial, sans-serif;
   width: 100%;
 }
+
+.container {
+  width: 1000px;
+  margin: 4px auto;
+  padding: 30px;
+  background-color: white;
+}
+
+/* Loan  */
+.loan-card {
+  position: relative;
+  margin: 10px 0px;
+  border: 1px solid #eee;
+  width: 100%;
+  padding: 15px 20px;
+  vertical-align: middle;
+  border-left: 3px solid #ffec62;
+  background: #d6d6d6;
+}
+
+.badge {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  color: green;
+}
+.loan-card:hover {
+  background: #797575;
+}
+
+@media screen and (max-width: 760px) {
+  .loan-card {
+    width: 30%;
+  }
+}
