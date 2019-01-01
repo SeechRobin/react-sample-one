@@ -24,6 +24,10 @@ $ yarn test
 
 ## Planning
 
+It took approximateley 3h to complete the project
+
+![Some notes](lendinvest-coding-challenge/notes/Lendinvest.jpg)
+
 ## Improvement
 
 - Add more functional tests on events
