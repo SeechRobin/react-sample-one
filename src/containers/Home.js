@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Modal from "../components/UI/Modal/Modal";
 import Loans from "../components/Loans/Loans";
 import LoanInvestForm from "../components/Loans/LoanInvestForm/LoanInvestForm";
-import AvailableLoansTotal from "../components/Loans/AvailableLoansTotal/AvailableLoansTotal";
+import AvailableLoansTotal from "../components/AvailableLoansTotal/AvailableLoansTotal";
 
 import loans from "../data/current-loans.json";
 

@@ -5,7 +5,7 @@ import { expect } from "chai";
 
 import Home from "./Home";
 import Loans from "../components/Loans/Loans";
-import AvailableLoansTotal from "../components/Loans/AvailableLoansTotal/AvailableLoansTotal";
+import AvailableLoansTotal from "../components/AvailableLoansTotal/AvailableLoansTotal";
 import LoanInvestForm from "../components/Loans/LoanInvestForm/LoanInvestForm";
 import Modal from "../components/UI/Modal/Modal";
 
