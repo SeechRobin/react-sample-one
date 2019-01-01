@@ -26,7 +26,7 @@ $ yarn test
 
 It took approximateley 3h to complete the project
 
-![Some notes](lendinvest-coding-challenge/notes/Lendinvest.jpg)
+![Some notes](notes/Lendinvest.jpg)
 
 ## Improvement
 
