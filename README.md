@@ -45,7 +45,7 @@ It took approximateley 3hrs to complete the project. Below is the breakdown of h
 
 ![Some notes](notes/Lendinvest.jpg)
 
-## Improvement
+## Improvements
 
 - Add more functional tests on events
 - More Improved styling, use Less, or CSS Modules whe the projects gets bigger.
