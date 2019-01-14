@@ -3,8 +3,8 @@
 ### Installing
 
 ```sh
-$ git clone https://gitlab.com/seechrobin/lendinvest-coding-challenge
-$ cd lendinvest-coding-challenges
+$ git clone https://github.com/SeechRobin/react-sample-one
+$ cd react-sample-one
 $ yarn install
 ```
 
