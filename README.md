@@ -1,6 +1,4 @@
-# LendInvest
 
-LendInvest Challenge
 
 ### Installing
 
@@ -43,7 +41,6 @@ It took approximateley 3hrs to complete the project. Below is the breakdown of h
 - Refactoring
 - Write up
 
-![Some notes](notes/Lendinvest.jpg)
 
 ## Improvements
 
